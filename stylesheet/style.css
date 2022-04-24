@@ -1,0 +1,203 @@
+/* width = ancho */
+/* height = alto */
+
+/* 
+la palabra "class" se la agregamos a una clase entera con distintos botones y para modificar los botones
+utilizamos "id" asi le realizamos cambios a cada boton
+*/
+
+/* propiedades desde cero */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* esta propiedad sirve para darle a todo el html el tamaño que tienen que tener las cajas  */
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+/* body {
+    background-color: rgb(211, 92, 92);
+} */
+
+/* HOME */
+
+/* HEADER */
+
+
+header section article.eslogan {
+    background-color: rgb(244, 75, 41);
+    margin: auto;
+    padding: 10px;
+    color: rgb(248, 244, 244);
+    text-align: center;
+    font-size: 25px;
+}
+
+header section ul.bar__nav {
+    background-color: rgb(24, 124, 177);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none; /* le saca las viñetas a la lista */
+}
+
+header section ul li a {
+    color: white;
+}
+
+header section ul li {
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+header section ul li:hover {
+    background-color: rgb(24, 75, 177);
+}
+
+/* FIN HEADER */
+
+/* -------------------------------------- */
+
+/* MAIN */
+
+main section h2.busqueda_por_vehiculo {
+    background-color: red; /* OJO ACA, SACAR ESTE COLOR */
+    font-size: 20px;
+    margin: auto;
+    padding: 10px;
+}
+
+main section h2.por--marca {
+    background-color: greenyellow;
+    font-size: 20px;
+    margin: auto;
+    padding: 10px;
+}
+
+h3 {
+    background-color: chartreuse;
+    font-size: 1.5rem;
+}
+
+main section.clases--marcas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2rem; 
+}
+
+main section.busqueda {
+    margin: 100px;
+}
+
+article.marca {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    height: 150px;
+    width: 150px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in;
+}
+
+section article h2{
+    font-size: 20px;
+    
+}
+
+article.marca:hover {
+    box-shadow: 5px 5px 15px rgba(211, 26, 26, 0.979);
+    color: red;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+#images--cars {
+    width: 50%;
+    height: 50%;
+}
+
+/* FIN MAIN */
+
+/* -------------------------------------- */
+
+/* FOOTER */
+
+footer section.nuestras--redes {
+    background-color: rgb(red, rgb(112, 94, 87), blue);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+/* FIN FOOTER */
+
+/* FIN HOME */
+
+/* -------------------------------------- */
+
+/* CONTACTO */
+
+.contacto_mainContainer {
+    min-height: 300px;
+    display: grid;
+    justify-content: left;
+    align-items: left;
+}
+
+.contacto_mainContainer .contacto_formato {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto_mainContainer section h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contacto_mainContainer section h4{
+    color: red;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contacto_mainContainer .contacto_formato input {
+    height: 2rem;
+    padding: 1rem;
+    outline: none;
+    margin-bottom: 2rem;
+}
+
+.contacto_mainContainer .contacto_formato textarea {
+    resize: none;
+    margin-bottom: 1.5rem;
+}
+
+.contacto_mainContainer button {
+    display: grid;
+    justify-items: center;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: grey;
+    color: blue;
+    transition: all .5s ease-in;
+}
+
+.contacto_mainContainer button:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid;
+}
+
+/* FIN CONTACTO */
